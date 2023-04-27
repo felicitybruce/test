@@ -25,7 +25,10 @@ class MainActivity : AppCompatActivity(), FragmentNavigation {
         }
         transaction.commit()
     }
-
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
+    }
 
 }
 
